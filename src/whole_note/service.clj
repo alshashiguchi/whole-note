@@ -12,6 +12,7 @@
 
 (defn home-page
   [request]
+  (prn request)
   (ring-resp/response "Hello World!"))
 
 ;; Defines "/" and "/about" routes with their associated :get handlers.
